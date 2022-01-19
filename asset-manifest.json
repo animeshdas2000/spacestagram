@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/spacestagram/static/css/main.121da193.css",
-    "main.js": "/spacestagram/static/js/main.346c2f8b.js",
+    "main.css": "/spacestagram/static/css/main.39ae8494.css",
+    "main.js": "/spacestagram/static/js/main.a791df71.js",
     "static/js/787.fa78698e.chunk.js": "/spacestagram/static/js/787.fa78698e.chunk.js",
     "static/media/nasa-logo.gif": "/spacestagram/static/media/nasa-logo.8d0f157db20096307a57.gif",
     "index.html": "/spacestagram/index.html",
-    "main.121da193.css.map": "/spacestagram/static/css/main.121da193.css.map",
-    "main.346c2f8b.js.map": "/spacestagram/static/js/main.346c2f8b.js.map",
+    "main.39ae8494.css.map": "/spacestagram/static/css/main.39ae8494.css.map",
+    "main.a791df71.js.map": "/spacestagram/static/js/main.a791df71.js.map",
     "787.fa78698e.chunk.js.map": "/spacestagram/static/js/787.fa78698e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.121da193.css",
-    "static/js/main.346c2f8b.js"
+    "static/css/main.39ae8494.css",
+    "static/js/main.a791df71.js"
   ]
 }
