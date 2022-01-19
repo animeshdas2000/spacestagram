@@ -6,14 +6,33 @@
     width: fit-content;
     border-radius: 8px;
     margin: 5px;
-    max-width: 400px;
+    max-width:clamp(300px,40vw,400px);
     height: fit-content;
     display: flex;
     flex-direction: column;
+    margin: 10px;
+}
+.card:hover{
+    filter: drop-shadow(2px 2px 20px #aaaaaa);
 }
 
 .feed-img{
     max-height: 300px;
+    width:clamp(300px,40vw,400px);
+    height: 300px;
+   
     object-fit: cover;
     border-radius: 8px;
+    background-color: rgb(214, 214, 214);
+}
+
+.card-foot{
+    display: flex;
+    justify-content: space-between;
+}
+.share-btn{
+    cursor: pointer;
+}
+.share-btn:hover{
+    color: #383838;
 }

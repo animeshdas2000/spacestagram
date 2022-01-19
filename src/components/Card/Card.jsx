@@ -1,41 +1,30 @@
-import React,{useState} from 'react'
-import "./Card.css"
-import {FiShare} from "react-icons/fi"
-import {AiOutlineHeart,AiFillHeart} from "react-icons/ai"
-function Card({url,alt,mediaType,date,owner,caption}) {
-    const [Like, setLike] = useState(false)
-    let media;
-
-
-    if(mediaType==='image'){
-        media=<img src={url} width="400px"className='feed-img'  />;
-    }else{
-        return(
-            <div></div>
-        );
-    }
-    return(
-        <div className='card'>
-            {media}
-            <strong>{owner?owner:"NASA"}</strong>
-            <span>
-                
-                {Like?<AiFillHeart size='1.5rem' />:<AiOutlineHeart size='1.5rem'/> }
-               
-                
-                
-                <FiShare size='1.5em'/>
-            </span>
-            <p>{alt}</p>
-
-            <span>{date}</span>
-        </div>
-        
-    )
-        
-    
-
+import React, { useState } from "react";
+import "./Card.css";
+import { FiShare } from "react-icons/fi";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+function Card({ url, alt, mediaType, date, owner, caption }) {
+  let media;
+  if (mediaType === "image") {
+    media = <img src={url}  className="feed-img" />;
+  } else {
+    return <div></div>;
+  }
+  return (
+    <div className="card">
+      {media}
+      <p><strong>{owner ? owner : "NASA"}</strong> {alt}</p>
+        <div className="card-foot"><span>{date}</span>
+      <span className="share-btn">
+        <FiShare
+          size="1.5em"
+          onClick={() => {
+            navigator.clipboard.writeText(url);
+          }}
+        />
+      </span></div>
+      
+    </div>
+  );
 }
-//10th februrary 2022 Submission Deadline extended
 
-export default Card
+export default Card;
