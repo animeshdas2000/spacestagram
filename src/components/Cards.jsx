@@ -17,10 +17,10 @@ function Cards(){
     async function fetchImage(){
         try{
             const request = await axios.get(`${process.env.REACT_APP_API_BASE_URL}${process.env.REACT_APP_NASA_API_Key}&count=8`);
-            console.log(request.data);
+            // console.log(request.data);
             setImgs(request.data);
         }catch(error){
-            console.log(error)
+           // console.log(error)
         }finally{
             setTimeout(() => {
                 setLoading(false);

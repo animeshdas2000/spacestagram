@@ -29,10 +29,17 @@
 .card-foot{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 .share-btn{
     cursor: pointer;
 }
 .share-btn:hover{
     color: #383838;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
